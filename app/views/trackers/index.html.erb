@@ -1,0 +1,19 @@
+<%= link_to "Home", root_path, class: 'button round red' %>
+<h1>Trackers#index</h1>
+<p>Find me in app/views/trackers/index.html.erb</p>
+<table>
+		<tr>
+			<th>case_number</th>
+			<th>active</th>
+			<th>edit</th>
+			<th>destroy</th>
+		</tr>
+<% @trackers.each do |tracker| %> 
+		<tr>
+			<td><%= tracker.cn %></td>
+			<td><%= tracker.active %></td> 
+			<td><%= link_to "Edit", trackers_edit_path(tracker: tracker) %></td>
+			<td><%= button_to "Destroy", trackers_destroy_path(tracker: tracker), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+		</tr>
+	
+	<% end %> 

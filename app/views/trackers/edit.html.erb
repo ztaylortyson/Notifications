@@ -1,0 +1,12 @@
+<%= link_to "Home", root_path, class: "button round red" %>
+<h1>Trackers#edit</h1>
+<p>Find me in app/views/trackers/edit.html.erb</p>
+
+<%= form_with url: 'update', model: @tracker do |f| %>
+	  <%= f.label :cn %>
+	  <%= f.text_field :cn, style: "width: 25%" %>
+	  <%= f.label :active %>
+	  <%= f.text_field :active %>
+
+	  <%= f.submit class: 'button round blue' %>  
+<% end %>

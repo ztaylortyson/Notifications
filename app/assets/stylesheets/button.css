@@ -1,0 +1,35 @@
+
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+.round {
+	border-radius: 18px;
+}
+
+.circle {
+	border-radius: 15px;
+}
+
+.green {
+	color: white;
+	background-color: green;
+}
+
+.red {
+	color: white;
+	background-color: darkred;
+}
+
+.blue {
+	color: white;
+	background-color: darkblue;
+}
