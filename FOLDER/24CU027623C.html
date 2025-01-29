@@ -1,0 +1,589 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Details</title>
+    <link rel="stylesheet" href="/lib/twitter-bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/lib/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="/lib/DataTables-1.11.3/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="/lib/bootstrap-datepicker/css/bootstrap-datepicker.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav class="nav-pills navbar navbar-expand-sm navbar-dark border-bottom box-shadow mb-3" style="background-color: #2d3f61;">
+        <div class="container">
+            
+            <img src="/img/court-seal-60px.png" width="60" height="60" class="mx-2" alt="">
+            <span class="navbar-brand">
+                <h4 class="title">
+                    
+                        <div>Register of Actions</div>
+                    
+                    
+                    
+                    
+
+                    <small style="color: #818b95">San Diego Superior Court</small>
+                </h4>
+            </span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="mainNavbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-light " href="/Cases">
+                            Case Search
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light " href="/Parties">
+                            Party Search
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light " href="/Dates">
+                            Date Search
+                        </a>
+                    </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-light " href="/Order/Lookup">
+                                Order Lookup
+                            </a>
+                        </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link text-light " href="/Information">
+                            Information
+                        </a>
+                    </li>
+                </ul>
+                
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item border border-secondary rounded">
+                                    <a class="nav-link text-light " href="/mailOrderCart">
+                                    <i class="bi bi-cart"></i> Cart
+                                    <span class="badge badge-warning ml-1" id="cartCount">0</span>
+                                    </a>
+                        </li>
+                    </ul>
+                
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container">
+    <main role="main" class="pb-3">
+        
+
+<div class="text-center">
+    <h3 class="display-5">Case Details</h3>
+</div>
+
+<div class="bg-light border rounded p-3">
+    <dl class="row mb-0">
+        <dt class="col-sm-3">Case Number</dt>
+        <dd class="col-sm-9">
+            24CU027623C
+        </dd>
+
+        <dt class="col-sm-3">Case Title</dt>
+        
+                <dd class="col-sm-9">Pugh vs DPEP 7 Inc</dd>
+        
+        
+        
+        <dt class="col-sm-3">Case Category</dt>
+                <dd class="col-sm-9" name="caseCategory" id="caseCategory"> Civil</dd>
+        
+        <dt class="col-sm-3">Case Type</dt>
+        <dd class="col-sm-9">(U)Petition: Other Civil Petition</dd>
+        <dt class="col-sm-3">Case Status</dt>
+        <dd class="col-sm-9">Pending</dd>
+
+        <dt class="col-sm-3">Date Filed</dt>
+        <dd class="col-sm-9">12/10/2024</dd>
+        <dt class="col-sm-3">Case Age</dt>
+        <dd class="col-sm-9">50</dd>
+
+        <dt class="col-sm-3">Location</dt>
+        <dd class="col-sm-9">Central</dd>
+        
+            <dt class="col-sm-3">Judicial Officer</dt>
+            <dd class="col-sm-9">LONGSTRETH, ROBERT C.</dd>
+        
+        
+        
+        
+    </dl>
+</div>
+
+
+
+<button type="button" class="collapsible colactive">
+    Case Parties
+</button>
+<div class="bg-light border rounded p-3" style="display: block">
+        <div id="detail_parties_wrapper" class="dataTables_wrapper no-footer"><table id="detail_parties" class="display dataTable no-footer" style="margin-top: 1rem" role="grid" aria-describedby="detail_parties_info">
+            <thead>
+                <tr role="row"><th class="sorting" tabindex="0" aria-controls="detail_parties" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 191.984px;">Name</th><th class="sorting" tabindex="0" aria-controls="detail_parties" rowspan="1" colspan="1" aria-label="Role: activate to sort column ascending" style="width: 207.008px;">Role</th><th class="sorting" tabindex="0" aria-controls="detail_parties" rowspan="1" colspan="1" aria-label="Representation: activate to sort column ascending" style="width: 569.008px;">Representation</th></tr>
+            </thead>
+            <tbody>
+                    
+                    
+            <tr role="row" class="odd">
+                        <td>
+                            
+                            
+DPEP 7 Inc                            
+                        </td>
+                        <td>
+                            Respondent
+                        </td>
+                        <td>
+                        </td>
+                    </tr><tr role="row" class="even">
+                        <td>
+                            
+                            
+Pugh, Luke                            
+                        </td>
+                        <td>
+                            Petitioner
+                        </td>
+                        <td>
+                                    <span data-toggle="tooltip" title="" data-original-title="Lead Attorney">
+                                        <b>Tyson, Zachary</b>
+                                    </span>
+                                    ;&nbsp;
+Botham, Arthur                        </td>
+                    </tr></tbody>
+        </table><div class="dataTables_info" id="detail_parties_info" role="status" aria-live="polite">Showing 1 to 2 of 2 entries</div><div class="dataTables_paginate paging_full_numbers" id="detail_parties_paginate"><a class="paginate_button first disabled" aria-controls="detail_parties" data-dt-idx="0" tabindex="-1" id="detail_parties_first">First</a><a class="paginate_button previous disabled" aria-controls="detail_parties" data-dt-idx="1" tabindex="-1" id="detail_parties_previous">Previous</a><span><a class="paginate_button current" aria-controls="detail_parties" data-dt-idx="2" tabindex="0">1</a></span><a class="paginate_button next disabled" aria-controls="detail_parties" data-dt-idx="3" tabindex="-1" id="detail_parties_next">Next</a><a class="paginate_button last disabled" aria-controls="detail_parties" data-dt-idx="4" tabindex="-1" id="detail_parties_last">Last</a></div></div>
+</div>
+
+<button type="button" class="collapsible colactive">
+    Representation
+</button>
+<div class="bg-light border rounded p-3" style="display: block">
+    <div id="detail_attorneys_wrapper" class="dataTables_wrapper no-footer"><table id="detail_attorneys" class="display dataTable no-footer" style="margin-top: 1rem" role="grid" aria-describedby="detail_attorneys_info">
+        <thead>
+        <tr role="row"><th class="sorting" tabindex="0" aria-controls="detail_attorneys" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 104.281px;">Name</th><th class="sorting" tabindex="0" aria-controls="detail_attorneys" rowspan="1" colspan="1" aria-label="Address: activate to sort column ascending" style="width: 583.211px;">Address</th><th class="sorting" tabindex="0" aria-controls="detail_attorneys" rowspan="1" colspan="1" aria-label="Phone Number: activate to sort column ascending" style="width: 280.508px;">Phone Number</th></tr>
+        </thead>
+        <tbody>
+        
+        
+        <tr role="row" class="odd">
+            <td>
+                Botham, Arthur
+            </td>
+            <td>
+                Law Offices of Arthur R. Botham Jr., a Law Corporation, 2169 First Avenue, San Diego, CA 92101
+            </td>
+            <td>
+                619-393-0103; 619-913-0013; 619-358-9738
+            </td>
+        </tr><tr role="row" class="even">
+            <td>
+                Tyson, Zachary
+                <a href="mailto:ARTBOTHAM@GMAIL.COM" data-toggle="tooltip" title="" data-original-title="ARTBOTHAM@GMAIL.COM">
+                    <i class="bi bi-envelope"></i>
+                </a>
+            </td>
+            <td>
+                2169 FIRST AVE, SAN DIEGO, CA 92101
+            </td>
+            <td>
+                619-237-9292; 619-993-9092
+            </td>
+        </tr></tbody>
+    </table><div class="dataTables_info" id="detail_attorneys_info" role="status" aria-live="polite">Showing 1 to 2 of 2 entries</div><div class="dataTables_paginate paging_full_numbers" id="detail_attorneys_paginate"><a class="paginate_button first disabled" aria-controls="detail_attorneys" data-dt-idx="0" tabindex="-1" id="detail_attorneys_first">First</a><a class="paginate_button previous disabled" aria-controls="detail_attorneys" data-dt-idx="1" tabindex="-1" id="detail_attorneys_previous">Previous</a><span><a class="paginate_button current" aria-controls="detail_attorneys" data-dt-idx="2" tabindex="0">1</a></span><a class="paginate_button next disabled" aria-controls="detail_attorneys" data-dt-idx="3" tabindex="-1" id="detail_attorneys_next">Next</a><a class="paginate_button last disabled" aria-controls="detail_attorneys" data-dt-idx="4" tabindex="-1" id="detail_attorneys_last">Last</a></div></div>
+    
+</div>
+
+<button type="button" class="collapsible colactive">
+    Scheduled Hearings
+</button>
+<div class="bg-light border rounded p-3" style="display: block">
+        <p class="mt-3">No Future Hearings.</p>
+</div>
+
+<button type="button" class="collapsible colactive roabutton">
+    Register of Actions
+</button>
+
+<div style="display: block">
+    
+    <!-- Tab links -->
+    <div class="tab">
+        <button class="tablinks active" data-filter="">All Entries</button>
+        <button class="tablinks" data-filter="roa">ROA Entries</button>
+        <button class="tablinks" data-filter="filing">Filing Entries</button>
+        <button class="tablinks" data-filter="minute" style="display: none;">Minutes Entries</button>
+        <button class="tablinks" data-filter="hearing" style="display: none;">Hearing Entries</button>
+        <button class="tablinks" data-filter="tentative-ruling" style="display: none;">Tentative Rulings</button>
+    </div>
+
+    <form method="post" name="roaForm">
+        <input type="hidden" name="caseId" value="6712984">
+
+        <div id="events_container">
+    <input type="hidden" name="nonDocketable" id="nonDocketable" value="">
+    <div id="events-all_wrapper" class="dataTables_wrapper no-footer"><div class="top mt-3"><div class="float-left"><div id="events-all_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="events-all"></label></div></div></div><div class="dataTables_paginate paging_full_numbers" id="events-all_paginate"><a class="paginate_button first disabled" aria-controls="events-all" data-dt-idx="0" tabindex="-1" id="events-all_first">First</a><a class="paginate_button previous disabled" aria-controls="events-all" data-dt-idx="1" tabindex="-1" id="events-all_previous">Previous</a><span><a class="paginate_button current" aria-controls="events-all" data-dt-idx="2" tabindex="0">1</a></span><a class="paginate_button next disabled" aria-controls="events-all" data-dt-idx="3" tabindex="-1" id="events-all_next">Next</a><a class="paginate_button last disabled" aria-controls="events-all" data-dt-idx="4" tabindex="-1" id="events-all_last">Last</a></div><table id="events-all" class="display bg-light border rounded dataTable no-footer" style="margin: 1rem 0px; width: 100%;" role="grid" aria-describedby="events-all_info">
+        <thead>
+            <tr role="row"><th class="sorting" tabindex="0" aria-controls="events-all" rowspan="1" colspan="1" aria-label="ROA Number: activate to sort column ascending" style="width: 136px;">ROA Number</th><th class="sorting" tabindex="0" aria-controls="events-all" rowspan="1" colspan="1" aria-label="Event Date: activate to sort column ascending" style="width: 115px;">Event Date</th><th class="sorting" tabindex="0" aria-controls="events-all" rowspan="1" colspan="1" aria-label="Event Type / Comments: activate to sort column ascending" style="width: 332px;">Event Type / Comments</th><th class="sorting_disabled" rowspan="1" colspan="1" aria-label="
+                    
+                        
+                            Documents
+                        
+                        
+                            
+                                    
+                                        
+                                        
+                                    
+                            
+                            
+                        
+                    
+                " style="width: 385px;">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            Documents
+                        </div>
+                        <div class="col-md-8 col-sm-12">
+                            
+                                    <div class="btn-group float-md-right">
+                                        <input type="button" id="select-all" class="btn btn-primary" value="Select All">
+                                        <input type="button" id="clear-all" class="btn btn-outline-primary" value="Clear All">
+                                    </div>
+                            
+                            
+                        </div>
+                    </div>
+                </th></tr>
+        </thead>
+        <tbody>
+                
+                
+                
+                
+                
+        <tr class="trDocketable odd" role="row">
+                        <td>
+                            5
+                        </td>
+                    <td>
+                        
+                        
+                            <span hidden="">202412120000</span>12/12/2024
+                        
+                    </td>
+                    <td>
+System Generated Notice E-mailed                            <div style="margin-left:1.5em">tylc+172708.598@tyler.api.legalconnect.com</div>
+                        <ul class="small">
+                        </ul>
+                    </td>
+                    <td>
+                            <small class="text-muted">N/A</small>
+                    </td>
+                    
+                </tr><tr class="trDocketable even" role="row">
+                        <td>
+                            1
+                        </td>
+                    <td>
+                        
+                        
+                            <span hidden="">202412120000</span>12/12/2024
+                        
+                    </td>
+                    <td>
+Notice of Case Assignment                        <ul class="small">
+                        </ul>
+                    </td>
+                    <td>
+                                    
+                                                <input type="checkbox" name="documentCheckboxes" value="163845046:65696542" autocomplete="off">
+Notice of Case Assignment SD                                            <ul class="small">
+                                                <li>Page Count: 2</li>
+                                            </ul>
+                                    
+                                    
+                                    
+                                    
+                    </td>
+                    
+                </tr><tr class="trDocketable odd" role="row">
+                        <td>
+                            4
+                        </td>
+                    <td>
+                        
+                        
+                            <span hidden="">202412100000</span>12/10/2024
+                        
+                    </td>
+                    <td>
+Civil Case Cover Sheet                                    <div style="margin-left:1.5em">
+            Filed By:
+                
+                        <i>Petitioner</i> Pugh, Luke    </div>
+
+                                    <div style="margin-left:1.5em">
+            Refers To:
+                
+                        <i>Respondent</i> DPEP 7 Inc    </div>
+
+                        <ul class="small">
+                        </ul>
+                    </td>
+                    <td>
+                                    
+                                                <input type="checkbox" name="documentCheckboxes" value="163845049:65674895" autocomplete="off">
+Civil Case Cover Sheet                                            <ul class="small">
+                                                <li>Page Count: 2</li>
+                                            </ul>
+                                    
+                                    
+                                    
+                                    
+                    </td>
+                    
+                </tr><tr class="trDocketable even" role="row">
+                        <td>
+                            3
+                        </td>
+                    <td>
+                        
+                        
+                            <span hidden="">202412100000</span>12/10/2024
+                        
+                    </td>
+                    <td>
+Summons (Civil)                                    <div style="margin-left:1.5em">
+            Filed By:
+                
+                        <i>Petitioner</i> Pugh, Luke    </div>
+
+                                    <div style="margin-left:1.5em">
+            Refers To:
+                
+                        <i>Respondent</i> DPEP 7 Inc    </div>
+
+                        <ul class="small">
+                        </ul>
+                    </td>
+                    <td>
+                                    
+                                                <input type="checkbox" name="documentCheckboxes" value="163845048:65674894" autocomplete="off">
+Summons (Civil)                                            <ul class="small">
+                                                <li>Page Count: 1</li>
+                                            </ul>
+                                    
+                                    
+                                    
+                                    
+                    </td>
+                    
+                </tr><tr class="trDocketable odd" role="row">
+                        <td>
+                            2
+                        </td>
+                    <td>
+                        
+                        
+                            <span hidden="">202412100000</span>12/10/2024
+                        
+                    </td>
+                    <td>
+Petition - Other (Unlimited)                                    <div style="margin-left:1.5em">
+            Filed By:
+                
+                        <i>Petitioner</i> Pugh, Luke    </div>
+
+                                    <div style="margin-left:1.5em">
+            Refers To:
+                
+                        <i>Respondent</i> DPEP 7 Inc    </div>
+
+                        <ul class="small">
+                        </ul>
+                    </td>
+                    <td>
+                                    
+                                                <input type="checkbox" name="documentCheckboxes" value="163845047:65674893" autocomplete="off">
+Petition - Other (Unlimited)                                            <ul class="small">
+                                                <li>Page Count: 5</li>
+                                            </ul>
+                                    
+                                    
+                                    
+                                    
+                    </td>
+                    
+                </tr></tbody>
+    </table><div class="bottom"><div class="dataTables_info" id="events-all_info" role="status" aria-live="polite">Showing 1 to 5 of 5 entries</div><div class="dataTables_paginate paging_full_numbers"><a class="paginate_button first disabled" aria-controls="events-all" data-dt-idx="0" tabindex="-1">First</a><a class="paginate_button previous disabled" aria-controls="events-all" data-dt-idx="1" tabindex="-1">Previous</a><span><a class="paginate_button current" aria-controls="events-all" data-dt-idx="2" tabindex="0">1</a></span><a class="paginate_button next disabled" aria-controls="events-all" data-dt-idx="3" tabindex="-1">Next</a><a class="paginate_button last disabled" aria-controls="events-all" data-dt-idx="4" tabindex="-1">Last</a></div></div><div class="clear"></div></div>
+    <div class="d-flex justify-content-between align-items-center mt-3">
+        <a class="btn btn-primary" href="/casesPrint/CfDJ8KlzWnu_R2RNnij1ioS5_rTxN4kA-aStnCzci6Urrt-OBs5VoRBnNhEEV2RL3JCwSn1SpBziPgr0HiblP6nBdjvW7L8hVmX6I0y8v8Y4CVE_NCdhSd3lc96i1jqGDXqmyQ">
+            Printable ROA
+        </a>
+        
+            
+            <button class="btn btn-primary">Add to Cart</button>
+        
+        
+    </div>
+</div>
+
+        <input type="hidden" name="documentValues" id="documentValues" value="">
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8KlzWnu_R2RNnij1ioS5_rTe7eM3NPft5xHjxfoO06U4MNrs8g3pf3ATSKbesj_lSdK6qNSXRec8rcnxV-hK2utrwAQhBwzkmQZvymGoiZYiPMDst00BXHwGQKMZ29Cj-qarPf8V4BqJGuZlLFNWsoM"></form>
+</div>
+<div class="container mt-4" style="border:3px; border-style:solid;border-color:blue;padding:1em;">
+    <b>THE INFORMATION IN THIS REGISTER OF ACTIONS IS PROVIDED AS IS, WITHOUT WARRANTY BY THE SAN DIEGO SUPERIOR COURT AS TO CONTENT OR ACCURACY OF THE INFORMATION.</b>  The Entry Date on the Register of Actions may not always reflect the actual filing date of a document and not all documents filed with the Court are listed on the Register of Actions. It is recommended that users refer to the case file for confirmation.
+</div>
+
+
+
+    </main>
+</div>
+
+<footer class="border-top footer text-muted">
+    <div class="container">
+        © 2021 - San Diego Superior Court
+    </div>
+</footer>
+
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/twitter-bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" charset="utf8" src="/lib/DataTables-1.11.3/js/jquery.dataTables.js"></script>
+<script type="text/javascript" charset="utf8" src="/lib/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+
+<script type="text/javascript">
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+    </script>
+
+
+    <script type="text/javascript">
+            $(function () {
+                let termsAccepted = sessionStorage.getItem('termsAccepted');
+                console.log('termsAccepted', termsAccepted);
+                if (!termsAccepted) {
+                    $('#mainNavbar').addClass('hideMainNavbar');
+                    $('#kiosk-buttons').hide();
+                }
+            })
+        </script>
+
+
+
+
+    
+            <script src="/js/Checkbox.js"></script>
+    
+    
+    <script src="/js/Collapse.js"></script>
+
+    
+
+    <script>
+    function toggleShowMore(button) {
+        if (button.innerText === "Show More") {
+            button.innerText = "Show Less";
+        } else {
+            button.innerText = "Show More";
+        }
+    }
+    </script>
+    <script>
+        $(document).ready(function () {
+            // Initialize DataTable with hidden type column
+            let table = $('#events-all').DataTable({
+                "pagingType": "full_numbers",
+                searching: true,
+                "dom": '<"top mt-3"<"float-left"f>>prt<"bottom"lip><"clear">', // Show search box at top-left with margin
+                lengthChange: false,
+                "pageLength": 20,
+                "order": [],
+                "columnDefs": [
+                    { "orderable": false, "targets": 3 }, // Disable sorting on documents column
+                    { "visible": false, "targets": 4 }    // Hide the entry types column
+                ]
+            });
+
+            // Function to check if any rows match a filter
+            function hasMatchingRows(filter) {
+                let matches = 0;
+                table.column(4).data().each(function(value) {
+                    if (!filter || value.includes(filter)) {
+                        matches++;
+                    }
+                });
+                return matches > 0;
+            }
+
+            // Hide tabs with no matching entries
+            function updateTabVisibility() {
+                $('.tablinks').each(function() {
+                    let filter = $(this).data('filter');
+                    if (!filter || hasMatchingRows(filter)) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            }
+
+            // Initial tab visibility
+            updateTabVisibility();
+
+            // Handle tab clicks for filtering
+            $('.tablinks').on('click', function() {
+                let filter = $(this).data('filter');
+                
+                // Clear any existing search/filter
+                table.search('').columns().search('').draw();
+                
+                // Apply new filter if one is selected
+                if (filter) {
+                    let useRegEx = true;
+                    table.column(4).search(filter, useRegEx, false).draw();
+                }
+                
+                // Update active tab styling
+                $('.tablinks').removeClass('active');
+                $(this).addClass('active');
+
+                // Update tab visibility after filtering
+                updateTabVisibility();
+            });
+
+            // Handle search box
+            $('#searchText').on('keyup', function() {
+                table.search(this.value).draw();
+            });
+
+            table.on('page.dt', function () {
+                $('html, body').animate({
+                    scrollTop: $("form").offset().top
+                }, 200);
+            });
+        });
+
+        $(document).ready(function () {
+            $("table[id^='detail']").DataTable({
+                "pagingType": "full_numbers",
+                searching: false,
+                lengthChange: false,
+                "order": []
+            });
+        });
+    
+    </script>
+
+
+</body></html>

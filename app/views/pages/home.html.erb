@@ -1,3 +1,6 @@
+<% flash.each do |k,v| %> 
+	<div class="flash"><%= v %></div> 
+	<% end %> 
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
 <hr>
@@ -5,13 +8,13 @@
 	
 	<%= form_with url: 'add', model: @tracker do |f| %>
 	  <%= f.label :cn %>
-	  <%= f.text_field :cn %>
+	  <%= f.text_field :cn, class: "form-input" %>
 	  <%= f.submit class: 'button round blue' %>  
 	<% end %>
 
 
 <hr>
-<%= link_to "Tracker Index", trackers_index_path, class: 'button round blue' %>
+
 
 <% if @trackers.nil? %>
 	<p><strong>No</strong>Cases being Tracked.</p>
@@ -21,6 +24,8 @@
 			<th>Count</th>
 			<th>Case Number</th>
 			<th>Active</th>
+			<th>Toggle Status</th>
+			<th>View</th>
 			</tr>
 			<tr>
 				<% count = 1 %>
@@ -28,7 +33,13 @@
 					<td><%= count %></td>
 					<td><%= tracker.cn %></td>
 					<td><%= tracker.active %></td>
-					<td><%= button_to "  ", pages_toggle_path(tracker: tracker), class: "button round green" %></td>
+					<% if tracker.active == true %>
+						<% btn_color = "darkgreen" %>
+					<% else %>
+						<% btn_color = "red" %> 
+					<% end %>
+					<td><%= button_to "  ", pages_toggle_path(tracker: tracker), class: "button round #{btn_color}" %></td>
+					<td><%= link_to "View", scraper_home_path(tracker: tracker), class: "button round" %></td>
 				<% count += 1 %>
 				
 			</tr>

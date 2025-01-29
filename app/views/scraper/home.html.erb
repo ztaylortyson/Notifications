@@ -1,0 +1,10 @@
+
+<h3>Scraper#home</h3>
+<h3><%= @file %></h3>
+<h3>Roa Model exist? <%= @roa.inspect %></h3>
+<h3>Lroa: </h3>
+<%= button_to "Get ROA from SDSC", scraper_get_roa_path(tracker: @tracker), class: "button round blue" %> 
+<%= link_to "Read ROA from Folder", scraper_read_roa_path(tracker: @tracker), class: "button round blue" %> 
+<%= link_to "Update ROA List", scraper_list_roas_path, class: "button round blue" %> 
+
+

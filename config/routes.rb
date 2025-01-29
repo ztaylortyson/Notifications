@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  get "roas/show"
+  get "roas/create"
+  get "roas/edit"
+  get "roas/update"
+  get "roas/destroy"
+  get "scraper/home"
+  post "scraper/get_roa", to: "scraper#get_roa"
+  get "scraper/read_roa"
+  get "scraper/list_roas"
   get "trackers/index"
   get "trackers/create"
   get "trackers/edit"
@@ -7,6 +16,7 @@ Rails.application.routes.draw do
   post 'add', to: "pages#add"
   get 'add', to: 'pages#add'
   root "pages#home"
+  get 'pages/admin'
   post 'pages/toggle', to: 'pages#toggle' 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

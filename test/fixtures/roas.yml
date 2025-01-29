@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  lroa: 1
+  old_roa: MyString
+  roa_top: MyString
+  status: MyString
+  tracker: one
+
+two:
+  lroa: 1
+  old_roa: MyString
+  roa_top: MyString
+  status: MyString
+  tracker: two

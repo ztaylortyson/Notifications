@@ -14,19 +14,27 @@ class PagesController < ApplicationController
 
   def toggle
     puts " = = = = > * * "
-    @tracker = Tracker.find(params[:tracker])
-    puts @tracker.active 
-    if @tracker.active == true 
-      @tracker.active = false
-      @tracker.save
-    elsif @tracker.active == false 
-      @tracker.active = true
-      @tracker.save
+    puts params.inspect
+    puts " get obj"
+    @obj = Tracker.find(params[:tracker])
+    puts @obj.inspect
+    puts "Obj's active attribute is #{@obj.active?}"
+    puts 
+    if @obj.active?
+      @obj.active = false
+      puts "Set obj active to false."
+      flash[:notice] = "Status for #{@obj.cn} changed to #{@obj.active}."
+      puts "Save objs active state."
+      @obj.save 
+      puts "done."
+      puts @obj.inspect
+      redirect_to root_path
     else
-      flash[:notice] = "Error."
+      @obj.active = true
+      @obj.save 
+      redirect_to root_path
     end
-    puts " ^^ ^^ "
-    puts @tracker.active
+  
   end
 
 end
